@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+<title>Number Guessing Game</title>
+</head>
+
+
+<body>
+
+
+
+</body>
+
+<script>
+
+var randomNumber = Math.round(Math.random()*10);
+for(var i = 1; i <= 10; i++){
+
+var userInput = prompt();
+var userScore = i;
+
+if(userInput == randomNumber){
+	document.writeln("You got the right number (" + randomNumber + ")!");
+	document.write("It took you " + userScore + " tries. Good job!");
+	break;
+}
+
+else{
+	alert("You got it wrong try again");
+}
+}
+
+if (i > 10){
+	document.write("GAME OVER");
+}
+
+
+
+</script>
+
+</html>
